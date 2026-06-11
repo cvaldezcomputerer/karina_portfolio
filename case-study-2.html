@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marigold System — Karina Vega</title>
-  <meta name="description" content="Case study: building Marigold, a shared design system adopted across six product teams." />
+  <title>Buddy — Karina Vega</title>
+  <meta name="description" content="UX case study: Buddy, a study companion that helps anxious students take real breaks with a character that grows when they do." />
 
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -25,144 +25,192 @@
   <main>
     <section class="cs-hero container">
       <div class="cs-hero__inner">
-        <p class="eyebrow">Design System</p>
-        <h1 class="cs-hero__title">Marigold System</h1>
+        <p class="eyebrow">UX Case Study &middot; Concept</p>
+        <h1 class="cs-hero__title">Buddy</h1>
         <p class="lead">
-          A shared design language that let six product teams move faster
-          without quietly drifting apart.
+          A study companion that helps anxious students take real breaks — with
+          a character that grows when they do.
         </p>
       </div>
       <dl class="cs-meta">
         <div>
           <dt>Role</dt>
-          <dd>Design Systems Lead</dd>
+          <dd>UX Research &amp; Design</dd>
         </div>
         <div>
-          <dt>Timeline</dt>
-          <dd>Ongoing &middot; 2022—</dd>
+          <dt>Type</dt>
+          <dd>Wellness app concept (AR)</dd>
         </div>
         <div>
-          <dt>Scope</dt>
-          <dd>60+ components, 3 platforms</dd>
+          <dt>Methods</dt>
+          <dd>Research, persona, usability testing</dd>
         </div>
       </dl>
     </section>
 
     <div class="container">
-      <div class="media">
-        <div class="block block--soft media__frame" role="img" aria-label="Marigold component library overview"></div>
+      <div class="figure">
+        <div class="figure__mat">
+          <img src="assets/img/buddy/before-after.png" alt="Buddy screens: activities, start study session, a take-a-pause prompt, and a growing plant character" loading="lazy" />
+        </div>
       </div>
 
       <section class="cs-section">
         <div class="cs-section__head">
           <p class="eyebrow">01 — Overview</p>
-          <h2 class="cs-section__title">Six teams, six slightly different buttons.</h2>
+          <h2 class="cs-section__title">Studying harder isn&rsquo;t the problem. Never stopping is.</h2>
         </div>
         <div class="prose">
           <p>
-            The company had grown from one product to a small suite, and each
-            team had built its own UI as it went. Nothing was broken, exactly —
-            but the products no longer felt related. There were eleven shades of
-            &ldquo;primary blue&rdquo; in production and three different ideas of
-            what a modal should do.
-          </p>
-          <p>
-            I was brought in to create Marigold: a system that could unify the
-            surface without flattening the teams behind it.
+            Buddy is a concept app that helps students study in healthy stretches
+            and actually rest between them. Instead of nagging, it uses a friendly
+            character and light AR to make breaks feel like progress — so stepping
+            away stops feeling like falling behind.
           </p>
         </div>
       </section>
 
       <section class="cs-section">
         <div class="cs-section__head">
-          <p class="eyebrow">02 — Problem</p>
-          <h2 class="cs-section__title">The hard part was never the components.</h2>
+          <p class="eyebrow">02 — Persona</p>
+          <h2 class="cs-section__title">Meet Kerstin, the anxious perfectionist.</h2>
         </div>
         <div class="prose">
           <p>
-            A shared library is easy to publish and easy to ignore. The real
-            challenge was adoption: giving teams something so obviously better
-            than rolling their own that the library became the path of least
-            resistance, not a tax.
+            Kerstin is the student Buddy is built for: driven, hard on herself,
+            and quick to skip breaks when exams loom. She wants to do well, but
+            pushing without pause leaves her stressed and burnt out.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/buddy/persona.png" alt="Persona: Kerstin Wolf, the anxious perfectionist — goals, frustrations, and behaviours" loading="lazy" />
+          </div>
+          <figcaption>Kerstin Wolf — the student behind every design decision.</figcaption>
+        </figure>
+
+        <blockquote class="pull-quote">
+          I don&rsquo;t pre-plan, so it piles up — and I always forget to take a break.
+        </blockquote>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">03 — Key insight</p>
+          <h2 class="cs-section__title">Breaks have a sweet spot.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            I asked students how long they study in one stretch. The answers
+            pointed at a clear window: somewhere between
+            <strong>30 minutes and 2 hours</strong> before a break keeps focus up
+            without burning out. That range became the backbone of Buddy&rsquo;s
+            time tracker — it nudges a pause before fatigue sets in, not after.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/buddy/key-statistic.png" alt="Key statistic: 30 minutes minimum and 2 hours maximum recommended study duration before a break" loading="lazy" />
+          </div>
+          <figcaption>The study-duration window that drives the time tracker.</figcaption>
+        </figure>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">04 — Challenges</p>
+          <h2 class="cs-section__title">Four problems worth designing around.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            The brief had real tension in it: help students manage
+            <strong>exam-related anxiety</strong>, make an
+            <strong>AR experience</strong> that&rsquo;s genuinely friendly to use,
+            create a <strong>character</strong> people connect with emotionally,
+            and — hardest of all — <strong>convince users to break the habit</strong>
+            of pushing through without rest.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/buddy/challenges.png" alt="Four challenges: user awareness, technology integration, content creation, and existing habits" loading="lazy" />
+          </div>
+          <figcaption>The four challenges that shaped the design.</figcaption>
+        </figure>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">05 — The design</p>
+          <h2 class="cs-section__title">Make resting feel like growing.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            The redesign turned a flat &ldquo;start session&rdquo; screen into a
+            warm loop: study, then pick a break that suits you — a walk, a
+            stretch, dancing, yoga — and watch a plant grow as the habit builds.
+            The character turns an abstract good habit into something you can
+            see and care about.
+          </p>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">06 — Testing</p>
+          <h2 class="cs-section__title">What students actually felt.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Usability testing told a clear story. The illustrations made the app
+            feel <strong>friendly and fun</strong>, and the layout felt intuitive
+            enough that people didn&rsquo;t overthink where to tap. The sharpest
+            note was about feel, not flow:
           </p>
         </div>
 
         <blockquote class="pull-quote">
-          A design system isn&rsquo;t a library. It&rsquo;s an agreement.
+          Interactions feel lifeless without any haptic feedback.
         </blockquote>
 
-        <div class="prose">
-          <p>
-            So I treated Marigold as a product, with the engineers and designers
-            on those six teams as its users. That meant research, a roadmap,
-            release notes, and office hours — the unglamorous scaffolding that
-            makes a system trustworthy enough to build on.
-          </p>
-        </div>
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/buddy/user-quotes.png" alt="User testing quotes about illustrations, haptic feedback, and intuitive layout" loading="lazy" />
+          </div>
+          <figcaption>Testing feedback — the good, and the clear next step.</figcaption>
+        </figure>
       </section>
 
       <section class="cs-section">
         <div class="cs-section__head">
-          <p class="eyebrow">03 — Process</p>
-          <h2 class="cs-section__title">Tokens first, then components, then trust.</h2>
+          <p class="eyebrow">07 — Reflection</p>
+          <h2 class="cs-section__title">Breaks as growth, not guilt.</h2>
         </div>
         <div class="prose">
           <p>
-            We started with an audit — every color, spacing value, and text style
-            in production — and collapsed it into a single tier of design tokens.
-            Components were rebuilt on top of those tokens so a change to the
-            palette rippled everywhere at once, on purpose.
-          </p>
-        </div>
-
-        <div class="media-pair">
-          <div class="block block--accent media__frame" role="img" aria-label="Token architecture"></div>
-          <div class="block block--ink media__frame" role="img" aria-label="Component documentation"></div>
-        </div>
-
-        <div class="prose">
-          <p>
-            Governance was deliberately lightweight: a contribution path for new
-            patterns, a clear &ldquo;not yet&rdquo; for one-offs, and
-            documentation that explained the <strong>why</strong>, not just the
-            props. People follow a system they understand.
-          </p>
-        </div>
-      </section>
-
-      <section class="cs-section">
-        <div class="cs-section__head">
-          <p class="eyebrow">04 — Outcome</p>
-          <h2 class="cs-section__title">From weeks of UI work to an afternoon.</h2>
-        </div>
-        <div class="prose">
-          <p>
-            Within two quarters, all six teams had adopted Marigold for new work.
-            Teams reported that <strong>standing up a new screen went from days
-            to hours</strong>, and the first full-product theme change — once a
-            month-long project — shipped in a single afternoon.
+            Buddy&rsquo;s real idea is small but stubborn: reframe rest as progress.
+            For a perfectionist like Kerstin, a character that grows when she
+            pauses is more persuasive than any reminder.
           </p>
           <p>
-            More than the numbers, the products started to feel like a family
-            again. Marigold is still evolving, and that&rsquo;s the point: it&rsquo;s
-            infrastructure, not a deliverable.
+            Next, I&rsquo;d add the haptic feedback testers asked for, widen the
+            library of break activities, and test the AR character with more
+            students to see whether it keeps them coming back.
           </p>
-        </div>
-
-        <div class="media">
-          <div class="block block--soft media__frame media__frame--tall" role="img" aria-label="Marigold system in use across products"></div>
-          <p class="media__caption">Marigold tokens and components running across three of the six products.</p>
         </div>
       </section>
 
       <nav class="cs-nav" aria-label="Case studies">
-        <a class="cs-nav__prev" href="case-study-1.html">
-          <span class="cs-nav__dir">&larr; Previous</span>
-          <span class="cs-nav__title">Atlas Banking App</span>
+        <a class="cs-nav__prev" href="gallery.html">
+          <span class="cs-nav__dir">&larr; Index</span>
+          <span class="cs-nav__title">All work</span>
         </a>
-        <a class="cs-nav__next" href="case-study-3.html">
-          <span class="cs-nav__dir">Next &rarr;</span>
-          <span class="cs-nav__title">Field Notes Studio</span>
+        <a class="cs-nav__next" href="case-study-1.html">
+          <span class="cs-nav__dir">Next project &rarr;</span>
+          <span class="cs-nav__title">Aldi App</span>
         </a>
       </nav>
     </div>

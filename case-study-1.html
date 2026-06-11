@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atlas Banking App — Karina Vega</title>
-  <meta name="description" content="Case study: rebuilding the Atlas mobile banking experience around speed, clarity, and trust." />
+  <title>Aldi In-Store Shopping App — Karina Vega</title>
+  <meta name="description" content="UX case study: a concept app that makes in-person grocery shopping faster and calmer for shoppers who prefer to stay offline." />
 
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -25,147 +25,235 @@
   <main>
     <section class="cs-hero container">
       <div class="cs-hero__inner">
-        <p class="eyebrow">Product Design</p>
-        <h1 class="cs-hero__title">Atlas Banking App</h1>
+        <p class="eyebrow">UX Case Study &middot; Concept</p>
+        <h1 class="cs-hero__title">Aldi In-Store Shopping App</h1>
         <p class="lead">
-          Rebuilding a mobile banking experience around speed, clarity, and the
-          quiet confidence people need when they&rsquo;re moving money.
+          A concept app that makes in-person grocery shopping faster and calmer —
+          designed for the shoppers who&rsquo;d rather stay out of online delivery.
         </p>
       </div>
       <dl class="cs-meta">
         <div>
           <dt>Role</dt>
-          <dd>Lead Product Designer</dd>
+          <dd>UX Research &amp; Design</dd>
         </div>
         <div>
-          <dt>Timeline</dt>
-          <dd>4 months &middot; 2024</dd>
+          <dt>Type</dt>
+          <dd>Mobile app concept</dd>
         </div>
         <div>
-          <dt>Team</dt>
-          <dd>2 designers, 5 engineers</dd>
+          <dt>Methods</dt>
+          <dd>Interviews, affinity mapping, prototyping</dd>
         </div>
       </dl>
     </section>
 
     <div class="container">
-      <div class="media">
-        <div class="block block--accent media__frame" role="img" aria-label="Atlas app hero screens"></div>
+      <div class="figure">
+        <div class="figure__mat">
+          <img src="assets/img/aldi/app-concept.png" alt="Hand-drawn concept screens: item search, store map, cart, and QR self-checkout" loading="lazy" />
+        </div>
       </div>
 
       <section class="cs-section">
         <div class="cs-section__head">
           <p class="eyebrow">01 — Overview</p>
-          <h2 class="cs-section__title">A bank people liked, with a flow they didn&rsquo;t.</h2>
+          <h2 class="cs-section__title">Most grocery tech pushes people online. Some don&rsquo;t want to go.</h2>
         </div>
         <div class="prose">
           <p>
-            Atlas is a digital-first bank with a loyal base of around 400,000
-            customers. People came for the friendly brand and stayed for the
-            zero-fee accounts — but the core action, sending money, had grown
-            into a seven-step maze of confirmations, warnings, and dead ends.
+            Most grocery innovation aims at delivery and online carts. But a
+            sizeable group still prefers shopping in person — and feels left
+            behind by systems that assume everyone wants to move online. Aldi is
+            a concept app for them: it keeps the in-store trip and removes the
+            friction around it.
           </p>
           <p>
-            Support tickets told the story: <strong>transfers were the single
-            biggest source of confusion</strong>, and drop-off spiked right at
-            the moment of confirmation. The team had been adding safeguards one
-            at a time, and each was sensible on its own. Together they had turned
-            a 20-second task into a small act of courage.
+            I framed the project around one promise, written before any screens:
           </p>
         </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/aldi/problem-statement.png" alt="Problem statement: we aim to improve the in-person shopping experience at local shops, for those who aren't familiar with digital solutions, when they want a pleasing and efficient shop" loading="lazy" />
+          </div>
+          <figcaption>The problem statement that anchored every decision.</figcaption>
+        </figure>
       </section>
 
       <section class="cs-section">
         <div class="cs-section__head">
-          <p class="eyebrow">02 — Problem</p>
-          <h2 class="cs-section__title">Friction had been mistaken for safety.</h2>
+          <p class="eyebrow">02 — Research</p>
+          <h2 class="cs-section__title">Listening before designing.</h2>
         </div>
         <div class="prose">
           <p>
-            I started by mapping the existing transfer flow end to end and
-            running moderated sessions with twelve customers. The pattern was
-            consistent: people weren&rsquo;t reassured by the extra steps, they
-            were unsettled by them. Every interruption read as &ldquo;something
-            might be wrong.&rdquo;
+            I interviewed shoppers about how they buy groceries and why, then
+            clustered what they said into an affinity map — splitting the
+            in-person experience from the online one.
           </p>
         </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/aldi/affinity-map.png" alt="Affinity map of interview notes, grouped into in-person experience and online experience" loading="lazy" />
+          </div>
+          <figcaption>Interview notes, clustered into in-person vs. online themes.</figcaption>
+        </figure>
+
+        <div class="prose">
+          <p>
+            Three attitudes surfaced again and again: people found local stores
+            <strong>easy and convenient</strong>, they were
+            <strong>skeptical</strong> of online systems, and many carried a
+            <strong>bias</strong> that delivery simply costs more.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/aldi/interview-results.png" alt="Interview results: easy and convenient, skeptical, and bias" loading="lazy" />
+          </div>
+          <figcaption>What shoppers told me, in three recurring attitudes.</figcaption>
+        </figure>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">03 — Persona</p>
+          <h2 class="cs-section__title">Meet Flora.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Those attitudes converged on one person. Flora is 45, a kindergarten
+            teacher in Germany with two kids. She loves shopping at the local
+            store but isn&rsquo;t comfortable with digital systems — and she&rsquo;s
+            worn down by long lines and hunting for products on the shelves.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/aldi/persona.png" alt="Persona: Flora, 45, kindergarten teacher — background, pain points, wants, needs, and obstacles" loading="lazy" />
+          </div>
+          <figcaption>Flora — the shopper the concept is built around.</figcaption>
+        </figure>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">04 — The current trip</p>
+          <h2 class="cs-section__title">Where a calm errand turns stressful.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Mapping Flora&rsquo;s current trip showed exactly where things go wrong.
+            She starts calm and happy, then loses time searching for products
+            with no help in sight, and ends drained at a long checkout.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/aldi/experience-map.png" alt="Experience map of Flora's shopping trip, with her emotion dropping from calm to chaotic by checkout" loading="lazy" />
+          </div>
+          <figcaption>Experience map — her mood drops from &ldquo;calm and happy&rdquo; to &ldquo;chaotic&rdquo; by the till.</figcaption>
+        </figure>
 
         <blockquote class="pull-quote">
-          Every extra tap in a money flow is a moment for doubt to creep in.
+          I need help — where are the workers?
         </blockquote>
+      </section>
 
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">05 — Design goals</p>
+          <h2 class="cs-section__title">Turn each pain point into a feature.</h2>
+        </div>
         <div class="prose">
           <p>
-            That reframed the brief. The goal wasn&rsquo;t to remove safeguards —
-            it was to make trust the default and surface friction only when the
-            risk was real. Safety and speed weren&rsquo;t opposites; they&rsquo;d
-            just been wired together badly.
+            Three frictions, three goals. <strong>Trouble finding products</strong>
+            became a smart item search with a shopping list.
+            <strong>Long waits at checkout</strong> became mobile / self-checkout
+            with live line updates. <strong>Store-layout confusion</strong> became
+            an in-store map. All of it pointed at the same outcome: save time,
+            shop stress-free, and leave the store satisfied.
           </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/aldi/design-goals.png" alt="Design goals mapping pain points to features: smart item search, mobile/self checkout, and store map" loading="lazy" />
+          </div>
+          <figcaption>Pain points mapped to features, mapped to the feeling we wanted.</figcaption>
+        </figure>
+      </section>
+
+      <section class="cs-section">
+        <div class="cs-section__head">
+          <p class="eyebrow">06 — The concept</p>
+          <h2 class="cs-section__title">Keep Flora in the aisles; handle the rest.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            I sketched the flow as a storyboard, then built a paper prototype:
+            find a product, scan as you go, follow the store map, and check out
+            with a QR code — no till, no line.
+          </p>
+        </div>
+
+        <figure class="figure">
+          <div class="figure__mat">
+            <img src="assets/img/aldi/storyboard.png" alt="Hand-drawn storyboard of Flora's shopping trip using the app" loading="lazy" />
+          </div>
+          <figcaption>Storyboard — the trip, start to finish, with the app.</figcaption>
+        </figure>
+
+        <div class="figure-pair">
+          <figure class="figure">
+            <div class="figure__mat">
+              <img src="assets/img/aldi/prototype.png" alt="Paper prototype screens for the Aldi concept app" loading="lazy" />
+            </div>
+            <figcaption>Paper prototype — the full screen set.</figcaption>
+          </figure>
+          <figure class="figure">
+            <div class="figure__mat">
+              <img src="assets/img/aldi/moving-prototype.png" alt="Interactive prototype home screen: find a product, scan a package, shopping cart" loading="lazy" />
+            </div>
+            <figcaption>Home — find a product, scan, shopping cart.</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="cs-section">
         <div class="cs-section__head">
-          <p class="eyebrow">03 — Process</p>
-          <h2 class="cs-section__title">From seven steps to one screen.</h2>
+          <p class="eyebrow">07 — Reflection</p>
+          <h2 class="cs-section__title">Designing for the people who stayed offline.</h2>
         </div>
         <div class="prose">
           <p>
-            I rebuilt the flow around a single, editable summary screen: amount,
-            recipient, and timing all visible and changeable in place, with
-            confirmation as a held button rather than a separate page. Risk
-            checks moved to the background and only stepped forward for new
-            payees or unusual amounts.
-          </p>
-        </div>
-
-        <div class="media-pair">
-          <div class="block block--soft media__frame" role="img" aria-label="Early flow exploration"></div>
-          <div class="block block--ink media__frame" role="img" aria-label="Final transfer screen"></div>
-        </div>
-
-        <div class="prose">
-          <p>
-            We prototyped three versions in Figma and tested each with the same
-            twelve people. The winning direction wasn&rsquo;t the prettiest — it
-            was the one where no one asked &ldquo;wait, did it go through?&rdquo;
-          </p>
-        </div>
-      </section>
-
-      <section class="cs-section">
-        <div class="cs-section__head">
-          <p class="eyebrow">04 — Outcome</p>
-          <h2 class="cs-section__title">Half the time, a fraction of the doubt.</h2>
-        </div>
-        <div class="prose">
-          <p>
-            After a phased rollout to 100% of users over six weeks,
-            <strong>median time-to-transfer dropped by 52%</strong> and
-            transfer-related support tickets fell by just under a third. Most
-            tellingly, completion rate at the confirmation step climbed from 81%
-            to 96%.
+            The concept reframes grocery tech around shoppers who want to stay in
+            the aisles, not skip them — meeting Flora where she already is instead
+            of asking her to change. It directly answers her three frustrations:
+            finding products, waiting to pay, and getting lost in the store.
           </p>
           <p>
-            The pattern we built — trust by default, friction on demand — became
-            the template for how the rest of the app handles sensitive actions.
+            Given more time, I&rsquo;d usability-test the self-checkout and store-map
+            flows with shoppers like Flora, and validate the scan-as-you-go
+            interaction on real shelves before committing to higher-fidelity
+            screens.
           </p>
-        </div>
-
-        <div class="media">
-          <div class="block block--accent media__frame media__frame--tall" role="img" aria-label="Final Atlas transfer flow"></div>
-          <p class="media__caption">Final transfer flow — summary, edit-in-place, and held confirmation.</p>
         </div>
       </section>
 
       <nav class="cs-nav" aria-label="Case studies">
-        <a class="cs-nav__prev" href="case-study-3.html">
-          <span class="cs-nav__dir">&larr; Previous</span>
-          <span class="cs-nav__title">Field Notes Studio</span>
+        <a class="cs-nav__prev" href="gallery.html">
+          <span class="cs-nav__dir">&larr; Index</span>
+          <span class="cs-nav__title">All work</span>
         </a>
         <a class="cs-nav__next" href="case-study-2.html">
-          <span class="cs-nav__dir">Next &rarr;</span>
-          <span class="cs-nav__title">Marigold System</span>
+          <span class="cs-nav__dir">Next project &rarr;</span>
+          <span class="cs-nav__title">Buddy</span>
         </a>
       </nav>
     </div>

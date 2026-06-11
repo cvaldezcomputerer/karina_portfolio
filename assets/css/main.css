@@ -828,6 +828,53 @@ a.gallery__item:hover .gallery__media {
 }
 
 /* =========================================================
+   Real imagery
+   ========================================================= */
+
+/* Thumbnails (work index + gallery) crop to fill their frame. */
+img.work-row__media,
+img.gallery__media {
+  width: 100%;
+  object-fit: cover;
+  background-color: var(--color-surface);
+}
+
+/* Case-study figures show an artifact in full on a surface "mat". */
+.figure {
+  margin-block: var(--space-9);
+}
+
+.figure__mat {
+  padding: var(--space-6);
+  background-color: var(--color-surface);
+  border: var(--border-width) solid
+    color-mix(in oklab, var(--color-text-primary) 12%, transparent);
+}
+
+.figure__mat img {
+  width: 100%;
+  height: auto;
+}
+
+.figure figcaption {
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.figure-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  margin-block: var(--space-9);
+}
+
+.figure-pair .figure {
+  margin-block: 0;
+}
+
+/* =========================================================
    404.html
    ========================================================= */
 
@@ -877,7 +924,8 @@ a.gallery__item:hover .gallery__media {
     gap: var(--space-5);
   }
 
-  .media-pair {
+  .media-pair,
+  .figure-pair {
     grid-template-columns: 1fr;
   }
 
